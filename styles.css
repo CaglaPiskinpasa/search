@@ -1,0 +1,42 @@
+/* The implementation of the rounded corner criteria */
+/* https://www.w3schools.com/css/css3_borders.asp */
+#searchbox {
+    border-radius: 30px 30px 30px 30px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+#footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+ }
+
+
+#advancedlabels {
+    width: 280px;
+    margin-left: 50px;
+
+}
+
+
+input.form-control {
+    margin-bottom: 10px;
+}
+
+
+#advancedsearchbtn {
+    margin-left: 31px;
+    margin-top: 20px;
+}
+
+
+#littlelogo {
+    width: 100px;
+    height: auto;
+  }
+
+
+  .body {
+    background-color:rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+  }

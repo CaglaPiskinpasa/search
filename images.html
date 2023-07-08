@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        
+        <!-- Taken from Bootstrap's own website (Link: https://getbootstrap.com/docs/4.3/getting-started/introduction/) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Refers to my own stylesheet -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Icon source: https://www.kindpng.com/imgv/ToJxTbi_google-logo-in-a-snapback-hat-google-search/-->
+        <link href="rapper.png" rel="icon">
+
+        <title>Google: Image Search</title>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+
+        <div class="d-md-flex justify-content-md-end">
+            <ul class="m-3 nav nav-tabs">
+                <li class="navbar-brand">
+                    <a class="nav-link" href="index.html">Google Search</a>
+                </li>
+                <li class="navbar-brand">
+                    <a class="nav-link active" aria-current="page" href="image.html">Image Search</a>
+                </li>
+                <li class="navbar-brand">
+                    <a class="nav-link"  href="advanced.html">Advanced Search</a>
+                </li>
+                <li class="navbar-brand">
+                    <a class="nav-link" href="books.html">Book Search</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <img alt="Google Logo" class="img-fluid w-25" src="eyes_images.png">
+            <br>
+            <br>
+        <form action="https://www.google.com/search" class="mt-4" method="get">
+            <input id="searchbox" autocomplete="off" autofocus class="form-control form-control-lg w-50 mx-auto mb-4" name="q" placeholder="Search" type="search">
+        <!-- According to my research: tbm -> To Be Matched, isch -> Image Search. So basically the hidden input is telling the search engine to match the user input to images.-->
+            <input type="hidden" name="tbm" value="isch">
+            <button class="btn btn-primary" type="submit">Image Search</button>
+        </form>
+
+        <div id="footer">
+            <footer class="mb-5 small text-center text-muted">
+                Google: the not so legit version
+            </footer>
+        </div>
+
+    </div>
+</div>
+    </body>
+</html>
